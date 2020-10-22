@@ -1,0 +1,7 @@
+https://spring.io/guides/gs/producing-web-service/
+
+java -jar target/producing-web-service-0.0.1-SNAPSHOT.jar
+
+curl --header "content-type: text/xml" -d @request.xml http://localhost:8080/ws
+
+LE CLASSI DetailSoapFaultDefinitionExceptionResolver e ServiceFaultException possono essere usate per creare un'altro tipo di fault error
